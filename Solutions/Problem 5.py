@@ -2,8 +2,9 @@
 
 #Problem 5- Smallest multiple
 # https://projecteuler.net/problem=5
-# Answer
+# Answer = 21162960 
 
+# Solution 1
 def multiple(number):
     for i in range(19,11,-1):
         if number  % i != 0:
@@ -18,3 +19,7 @@ while True:
         number += 20
 
 print(number)
+
+# Solution 2
+
+
