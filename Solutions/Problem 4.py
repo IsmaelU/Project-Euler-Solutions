@@ -2,7 +2,7 @@
 
 # Problem 4- Largest palindrom product
 # https://projecteuler.net/problem=4
-# Answer =
+# Answer = 906609
 
 def palindrome():
     palindromes = []
