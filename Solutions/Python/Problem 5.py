@@ -1,5 +1,3 @@
-#!/usr/bin/python3.8
-
 #Problem 5- Smallest multiple
 # https://projecteuler.net/problem=5
 # Answer = 21162960 

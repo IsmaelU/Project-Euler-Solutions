@@ -1,5 +1,3 @@
-#!/usr/bin/python3.8
-
 # Problem 4- Largest palindrom product
 # https://projecteuler.net/problem=4
 # Answer = 906609

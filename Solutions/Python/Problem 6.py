@@ -1,5 +1,3 @@
-#!/usr/bin/python3.8
-
 # Project Euler Problem 6 - Sum Square Difference
 # https://projecteuler.net/problem=6
 # Answer = 25164150

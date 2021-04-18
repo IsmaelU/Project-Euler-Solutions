@@ -1,5 +1,3 @@
-#!/usr/bin/python3.9
-
 # Project Euler Problem 8- Largest product in a series
 # https://projecteuler.net/problem=8
 # Answer = 23514626000 
