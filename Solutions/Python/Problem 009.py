@@ -16,17 +16,12 @@ Find the product abc.
 """)
 
 
-def solve(num):
-    a = 1
-    b = 1
-    while True:
-        if a > b:
-            b += 1
-            a = 1
-        c = ((a ** 2) + (b**2)) ** 0.5
-        if sum((a,b,c)) == num:
-            return int(a * b * c)
-        a += 1
+""" This solution uses Euclid's Formula for finding Pythagorean Triplets:
+    Given any positive integers m and n where m > n > 0
+    a = 2mn
+    b = m^2 - n^2
+    b = m^2 + n^2
+"""
 
 def generate(m,n):
     a = 2 * m * n
@@ -34,13 +29,7 @@ def generate(m,n):
     c = (m ** 2) + (n ** 2)
     return(a,b,c)
 
-def solve2(num):
-    """ This solution uses Euclid's Formula for finding Pythagorean Triplets:
-    Given any positive integers m and n where m > n > 0
-    a = 2mn
-    b = m^2 - n^2
-    b = m^2 + n^2
-    """
+def solve(num):
     m = 2
     n = 1
     while sum(generate(m,n)) != num:
@@ -53,6 +42,5 @@ def solve2(num):
 def main():
     question()
     print(f"The answer is {solve(1000)}")
-    print(f"The answer is {solve2(1000)}")
 
 main()
