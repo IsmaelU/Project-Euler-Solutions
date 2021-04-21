@@ -1,5 +1,5 @@
 // Problem 1- Multiples of 3 and 5
-// https://projecteuler.net/problem-1
+// https://projecteuler.net/problem=1
 // Answer = 233168
 
 fn question() {
