@@ -1,8 +1,9 @@
 # Project Euler Problem 8- Largest product in a series
 # https://projecteuler.net/problem=8
-# Answer = 23514626000 
+# Answer = 23514626000
 def split_list(num_list):
-  return [int(num) for num in num_list]
+    return [int(num) for num in num_list]
+
 
 def multiple_list(num_list):
     answer = 1
@@ -18,7 +19,9 @@ def main():
         adjacent_digits = split_list(series[i:i+13])
         if 1 in adjacent_digits or 0 in adjacent_digits:
             continue
-        if multiple_list(adjacent_digits) > top_list: 
+        if multiple_list(adjacent_digits) > top_list:
             top_list = multiple_list(adjacent_digits)
     return top_list
+
+
 print(main())

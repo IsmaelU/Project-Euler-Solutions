@@ -17,26 +17,29 @@ It can be seen that this sequence (starting at 13 and finishing at 1) contains 1
 Which starting number, under one million, produces the longest chain?
 """)
 
+
 def collatz(num):
-    sequence = [num,]
+    sequence = [num, ]
     while sequence[-1] != 1:
         if sequence[-1] % 2 == 0:
             sequence.append(sequence[-1] / 2)
         else:
-            sequence.append((3 * sequence[-1]) +1)
+            sequence.append((3 * sequence[-1]) + 1)
     return len(sequence)
 
 
 def solve(bound):
     longest_len = 0
-    for i in range (0,bound):
+    for i in range(0, bound):
         if collatz(i) > longest_len:
             longest = i
             longest_len = collatz(i)
-    return(longest,longest_len)
+    return(longest, longest_len)
+
 
 def main():
     question()
     print(f"The answer is {solve(100)}")
+
 
 main()

@@ -1,6 +1,6 @@
-#Problem 5- Smallest multiple
+# Problem 5- Smallest multiple
 # https://projecteuler.net/problem=5
-# Answer = 21162960 
+# Answer = 21162960
 
 def question():
     print("""
@@ -12,10 +12,11 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 # Solution 1
 def multiple(number):
-    for i in range(19,11,-1):
-        if number  % i != 0:
-                return False
+    for i in range(19, 11, -1):
+        if number % i != 0:
+            return False
     return True
+
 
 def solve(num):
     answer = num
@@ -26,10 +27,10 @@ def solve(num):
             answer += num
     return answer
 
-# Solution 2
 
 def main():
     question()
     print(f"The answer is {solve(20)}")
+
 
 main()

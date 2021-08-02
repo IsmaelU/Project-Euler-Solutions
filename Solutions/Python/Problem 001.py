@@ -7,17 +7,18 @@ def question():
 
 
 def solve(bound):
-    return sum(i for i in range(1,bound) if i % 3 == 0 or i % 5 == 0)
+    return sum(i for i in range(1, bound) if i % 3 == 0 or i % 5 == 0)
 
-#def SumDivisbleBy(n , p):
+# def SumDivisbleBy(n , p):
 #    return int(n*(p/n)*((p/n)+1)/2)
 
-#def solve1(bound):
+# def solve1(bound):
 #    return SumDivisbleBy(3,bound-1) + SumDivisbleBy(5,bound-1) - SumDivisbleBy(15,bound-1)
+
 
 def main():
     question()
     print(solve(1000))
-    #print(solve1(1000))
+
 
 main()

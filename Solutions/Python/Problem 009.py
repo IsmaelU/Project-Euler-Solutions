@@ -3,6 +3,7 @@
 # Answer = 31875000
 from math import prod
 
+
 def question():
     print("""
 
@@ -23,24 +24,28 @@ Find the product abc.
     b = m^2 + n^2
 """
 
-def generate(m,n):
+
+def generate(m, n):
     a = 2 * m * n
     b = (m ** 2) - (n ** 2)
     c = (m ** 2) + (n ** 2)
-    return(a,b,c)
+    return(a, b, c)
+
 
 def solve(num):
     m = 2
     n = 1
-    while sum(generate(m,n)) != num:
+    while sum(generate(m, n)) != num:
         if m == n:
             m += 1
             n = 1
         n += 1
-    return prod(generate(m,n))
+    return prod(generate(m, n))
+
 
 def main():
     question()
     print(f"The answer is {solve(1000)}")
+
 
 main()

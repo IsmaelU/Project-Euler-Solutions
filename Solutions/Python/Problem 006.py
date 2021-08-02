@@ -4,14 +4,16 @@
 
 def square1(num):
     answer = 0
-    for i in range(1,num+1):
+    for i in range(1, num+1):
         answer += i
     return(answer**2)
 
 
 def square2(num):
     answer = 0
-    for i in range(1,num+1):
+    for i in range(1, num+1):
         answer += i ** 2
     return(answer)
+
+
 print(square1(100)-square2(100))
