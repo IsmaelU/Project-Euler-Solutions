@@ -1,6 +1,6 @@
 # Project Euler Problem 14 - Longest Collatz sequence
 # https://projecteuler.net/problem-14
-# Answer =
+# Answer = 837799 which has a length of 525
 
 def question():
     print("""
@@ -19,18 +19,20 @@ Which starting number, under one million, produces the longest chain?
 
 
 def collatz(num):
+    """Returns the len of a Collatz Sequence"""
     sequence = [num, ]
     while sequence[-1] != 1:
         if sequence[-1] % 2 == 0:
             sequence.append(sequence[-1] / 2)
         else:
             sequence.append((3 * sequence[-1]) + 1)
+    sequence.pop(0)
     return len(sequence)
 
 
 def solve(bound):
     longest_len = 0
-    for i in range(0, bound):
+    for i in range(1, bound):
         if collatz(i) > longest_len:
             longest = i
             longest_len = collatz(i)
@@ -39,7 +41,6 @@ def solve(bound):
 
 def main():
     question()
-    print(f"The answer is {solve(100)}")
-
+    print(f"The answer is {solve(1000000)}")
 
 main()

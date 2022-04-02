@@ -12,6 +12,7 @@ Find the sum of all the primes below two million.""")
 def is_prime(num):
     if num < 2:
         return False
+    num = sqrt(num)
     for i in range(2, num):
         if num % i == 0:
             return False
@@ -31,6 +32,13 @@ def solve(bound):
     return sum(prime_list)
 
 
+def num_list(num):
+    num = [1, 2]
+    num.extend([i for i in range(1, num, 2)])
+    return num
+
+
+def 
 def main():
     question()
     print(f"The answer is {solve(2000000)}")
