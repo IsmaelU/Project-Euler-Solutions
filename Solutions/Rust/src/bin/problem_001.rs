@@ -6,17 +6,16 @@ fn question() {
     println!("Find the sum of all the multiples of 3 or 5 below 1000.")
 }
 
-
-fn solve(bound: i32) -> i32{
+fn solve(bound: i32) -> i32 {
     let mut answer = 0;
-        for n in 1..bound {
-            if n % 3 == 0 || n % 5 == 0 {
-                answer = answer + n;
-            }
+    for n in 1..bound {
+        if n % 3 == 0 || n % 5 == 0 {
+            answer = answer + n;
         }
-        answer
+    }
+    answer
 }
-    
+
 fn main() {
     question();
     println!("{}", solve(1000));
