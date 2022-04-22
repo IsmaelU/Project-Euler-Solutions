@@ -12,6 +12,10 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
     """)
 
 
+def fib_sum(fib_list):
+    return(sum([i for i in fib_list if i % 2 == 0]))
+
+
 # First Solution
 def fibonacci(num):
     a = 1
@@ -23,22 +27,39 @@ def fibonacci(num):
         c = a+b
         a = b
         b = c
-    return(sum([i for i in fib_list if i % 2 == 0]))
+    return fib_sum(fib_list)
 
 
 # Second Solution
 def fibonacci2(num):
-    fib_numbers = [1, 2]
-    while fib_numbers[-1] < num:
-        fib_numbers.append(fib_numbers[-1] + fib_numbers[-2])
-    del fib_numbers[-1]
-    return(sum([i for i in fib_numbers if i % 2 == 0]))
+    fib_list = [1, 2]
+    while fib_list[-1] < num:
+        fib_list.append(fib_list[-1] + fib_list[-2])
+    del fib_list[-1]
+    return fib_sum(fib_list)
+
+
+# Third Solution
+# My first attempt at Tail Recursion
+def fibonacci3(n):
+    fib_list = [0, 1]
+
+    def fib_help(a, b, n):
+        c = a+b
+        if c < n:
+            fib_list.append(c)
+            return fib_help(b, c, n)
+        else:
+            return fib_list
+    return fib_sum(fib_help(0, 1, n))
 
 
 def main():
     question()
-    print(f"The answer to the first method is {fibonacci(4000000)}")
-    print(f"The answer to second solution is {fibonacci2(4000000)}")
+    a = 4000000
+    print(f"The answer to the first method is {fibonacci(a)}")
+    print(f"The answer to second method is {fibonacci2(a)}")
+    print(f"The answer to third method is {fibonacci3(a)}")
 
 
 main()
