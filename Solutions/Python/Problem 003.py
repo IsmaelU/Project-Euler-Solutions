@@ -6,7 +6,7 @@ import math
 import itertools
 
 def question():
-    print("What is the largest prime factor of the number 600851475143?"
+    print("What is the largest prime factor of the number 600851475143?")
 
 def is_prime(num):
     """
