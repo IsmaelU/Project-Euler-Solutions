@@ -18,7 +18,7 @@ def is_prime(num):
     Returns:
         bool: True if the number is prime, False otherwise.
     """
-    for i in range(2, num):
+    for i in range(2, (int(num ** 0.5)+1)):
         if (num % i) == 0:
             return False
     return True
@@ -27,7 +27,7 @@ def prime_list():
     """
     Find the 10001st prime number.
 
-    Time Complexity: O(n^2), where n is the number of iterations to find the 10001st prime.
+    Time Complexity: O(n * sqrt(m)), where n is the number of iterations to find the 10001st prime, and m is the value of the number being checked for primality.
 
     Returns:
         int: The 10001st prime number.
