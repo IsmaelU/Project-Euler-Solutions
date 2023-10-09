@@ -3,7 +3,7 @@
 # Answer = 837799 which has a length of 525
 
 def question():
-    """
+    print("""
     Explanation of the problem:
 
     The following iterative sequence is defined for the set of positive integers:
@@ -18,7 +18,7 @@ def question():
     Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.
 
     Which starting number, under one million, produces the longest chain?
-    """
+    """)
 
 def collatz_sequence_length(num):
     """

@@ -3,9 +3,6 @@
 # Answer = 104743
 
 def question():
-    """
-    Print the problem statement.
-    """
     print("What is the 10001st prime number?")
 
 def is_prime(num):
