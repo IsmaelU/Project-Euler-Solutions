@@ -54,7 +54,7 @@ def count_divisors(num):
     count = 0
     for i in range(1, int(math.sqrt(num)) + 1):
         if num % i == 0:
-            count += 2  # Count both i and num/i as divisors if they are different.
+            count += 2 if i != num // i else 1  # Count both i and num/i as divisors if they are different.
     return count
 
 def find_triangle_with_divisors(target_divisors):
