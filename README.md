@@ -21,7 +21,7 @@ Here are some of the Project Euler problems I've solved so far:
 | [Problem 1](https://projecteuler.net/problem=1)  | Multiples of 3 and 5              | [Python](Solutions/Python/Problem%20001.py), [Rust](Solutions/Rust/problem_001.rs) |
 | [Problem 2](https://projecteuler.net/problem=2)  | Even Fibonacci numbers            | [Python](Solutions/Python/Problem%20002.py)     |
 | [Problem 3](https://projecteuler.net/problem=3)  | Largest Prime Factor            | [Python](Solutions/Python/Problem%20003.py)     |
-| [Problem 4](https://projecteuler.net/problem=4)  | Largest palindrome product        | [Python](Solutions/Python/Problem%20004.py)     |
+| [Problem 4](https://projecteuler.net/problem=4)  | Largest palindrome product        | [Python](Solutions/Python/Problem%20004.py), [Rust](Solutions/Rust/problem_004.rs)      |
 | [Problem 5](https://projecteuler.net/problem=5)  | Smallest multiple                 | [Python](Solutions/Python/Problem%20005.py)     |
 | [Problem 6](https://projecteuler.net/problem=6)  | Sum square difference             | [Python](Solutions/Python/Problem%20006.py)     |
 | [Problem 7](https://projecteuler.net/problem=7)  | 10001st prime                    | [Python](Solutions/Python/Problem%20007.py)     |
