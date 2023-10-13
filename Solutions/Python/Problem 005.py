@@ -1,6 +1,6 @@
 # Problem 5 - Smallest multiple
 # https://projecteuler.net/problem=5
-# Answer = 21162960
+# Answer = 232792560
 
 def question():
     print("""
