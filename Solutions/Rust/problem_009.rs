@@ -1,6 +1,6 @@
 // Problem 1 -
 // https://projecteuler.net/problem=9
-// Answer =
+// Answer = 31875000
 
 fn question() {
     println!("{}", {

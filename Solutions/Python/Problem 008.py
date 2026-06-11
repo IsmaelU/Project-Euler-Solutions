@@ -1,6 +1,6 @@
 # Project Euler Problem 8 - Largest product in a series
 # https://projecteuler.net/problem=8
-# Answer = 23514626000
+# Answer = 23514624000
 
 def question():
     print("""
