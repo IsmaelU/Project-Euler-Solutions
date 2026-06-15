@@ -1,8 +1,8 @@
 # Project Euler Solutions
 
-![Python Badge](https://img.shields.io/badge/Python-3.12-blue)
-![Rust Badge](https://img.shields.io/badge/Rust-1.73-orange)
-![Haskell Badge](https://img.shields.io/badge/Haskell-Coming%20Soon-brightgreen)
+![Python Version](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python&logoColor=white)
+![Rust Version](https://img.shields.io/badge/Rust-1.x-orange?style=flat-square&logo=rust&logoColor=white)
+![Haskell Status](https://img.shields.io/badge/Haskell-Coming%20Soon-gray?style=flat-square&logo=haskell&logoColor=white)
 
 My solutions to the Project Euler problems. Solutions are written in Python and Rust, with plans to add Haskell solutions in the future.
 
