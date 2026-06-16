@@ -27,11 +27,11 @@ fn question() {
 /// 
 /// # Time Complexity
 /// 
-/// The time complexity of this function is O(num), where `num` is the input integer.
-fn solve(num: i32) -> i32 {
-    let num_range = num + 1;
-    let sum_of_squares: i32 = (1..num_range).map(|i| i * i).sum();
-    let square_of_sum: i32 = (1..num_range).sum::<i32>().pow(2);
+/// The time complexity of this function is O(1)
+fn solve(num: u32) -> u32 {
+    //let num_range = num + 1;
+    let square_of_sum: u32 = ((num * (num + 1))/2).pow(2);
+    let sum_of_squares: u32 = (num * (num + 1)*((2 * num)+1))/6;
     square_of_sum - sum_of_squares
 }
 
