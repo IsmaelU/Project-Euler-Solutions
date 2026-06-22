@@ -24,7 +24,7 @@ Here are some of the Project Euler problems I've solved so far:
 | [Problem 4](https://projecteuler.net/problem=4)  | Largest palindrome product        | [Python](Solutions/Python/Problem%20004.py), [Rust](Solutions/Rust/problem_004.rs)      |
 | [Problem 5](https://projecteuler.net/problem=5)  | Smallest multiple                 | [Python](Solutions/Python/Problem%20005.py), [Rust](Solutions/Rust/problem_005.rs)          |
 | [Problem 6](https://projecteuler.net/problem=6)  | Sum square difference             | [Python](Solutions/Python/Problem%20006.py), [Rust](Solutions/Rust/problem_006.rs) |
-| [Problem 7](https://projecteuler.net/problem=7)  | 10001st prime                    | [Python](Solutions/Python/Problem%20007.py)     |
+| [Problem 7](https://projecteuler.net/problem=7)  | 10001st prime                    | [Python](Solutions/Python/Problem%20007.py), [Rust](Solutions/Rust/problem_007.rs)      |
 | [Problem 8](https://projecteuler.net/problem=8)  | Largest product in a series       | [Python](Solutions/Python/Problem%20008.py), [Rust](Solutions/Rust/problem_008.rs)     |
 | [Problem 9](https://projecteuler.net/problem=9)  | Special Pythagorean triplet       | [Python](Solutions/Python/Problem%20009.py), [Rust](Solutions/Rust/problem_009.rs)      |
 | [Problem 10](https://projecteuler.net/problem=10)  | Summation of Primes       | [Python](Solutions/Python/Problem%20010.py)     |
