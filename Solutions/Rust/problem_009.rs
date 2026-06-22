@@ -1,4 +1,4 @@
-// Problem 1 -
+// Problem 9 - Special Pythagorean Triplet
 // https://projecteuler.net/problem=9
 // Answer = 31875000
 
@@ -16,14 +16,14 @@ Find the product abc.
     });
 }
 
-fn generate(m: i32, n: i32) -> (i32, i32, i32) {
-    let a: i32 = 2 * m * n;
-    let b: i32 = (m.pow(2)) - (n.pow(2));
-    let c: i32 = (m.pow(2)) + (n.pow(2));
+fn generate(m: u32, n: u32) -> (u32, u32, u32) {
+    let a: u32 = 2 * m * n;
+    let b: u32 = (m.pow(2)) - (n.pow(2));
+    let c: u32 = (m.pow(2)) + (n.pow(2));
     return (a, b, c);
 }
 
-fn solve(num: i32) -> i32 {
+fn solve(num: u32) -> u32 {
     let mut m = 2;
     let mut n = 1;
     let (mut a, mut b, mut c) = generate(m, n);

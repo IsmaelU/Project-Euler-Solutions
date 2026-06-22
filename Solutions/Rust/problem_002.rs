@@ -11,7 +11,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 }
 
 
-fn solve(bound: i32) -> i32{
+fn solve(bound: u32) -> u32{
     let mut sum = 0;
     let (mut a, mut b) = (1,2);
     while b < bound{
