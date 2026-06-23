@@ -1,14 +1,12 @@
 // Problem 10 - Summation of primes
 // https://projecteuler.net/problem=10
-// Answer = ?
+// Answer = 142913828922
 
 fn question() {
     println!("Find the sum of all the primes below two million.");
 }
 
 fn solve(limit: usize) -> u64 {
-    // Phase 1: Allocation & Initialisation
-    // Allocate a contiguous bitmask/boolean block representing numbers up to `limit`
     let mut is_prime = vec![true; limit];
     is_prime[0] = false;
     is_prime[1] = false;
@@ -22,14 +20,8 @@ fn solve(limit: usize) -> u64 {
         }
         i += 1;
     }
-    is_prime.into_iter().enumerate().filter().map(num as u64).sum()
-    // Phase 2: Sieve Execution Path
-    // Implement the stride loop to cross off composite indices up to sqrt(limit)
 
-    // Phase 3: Zero-Allocation Aggregation
-    // Use iterator chains to filter indices and calculate the final u64 sum
-
-    todo!()
+    is_prime.into_iter().enumerate().filter_map(|(index, is_prime)| is_prime.then_some(index as u64)).sum()
 }
 
 fn main() {

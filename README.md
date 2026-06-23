@@ -27,7 +27,7 @@ Here are some of the Project Euler problems I've solved so far:
 | [Problem 7](https://projecteuler.net/problem=7)  | 10001st prime                    | [Python](Solutions/Python/Problem%20007.py), [Rust](Solutions/Rust/problem_007.rs)      |
 | [Problem 8](https://projecteuler.net/problem=8)  | Largest product in a series       | [Python](Solutions/Python/Problem%20008.py), [Rust](Solutions/Rust/problem_008.rs)     |
 | [Problem 9](https://projecteuler.net/problem=9)  | Special Pythagorean triplet       | [Python](Solutions/Python/Problem%20009.py), [Rust](Solutions/Rust/problem_009.rs)      |
-| [Problem 10](https://projecteuler.net/problem=10)  | Summation of Primes       | [Python](Solutions/Python/Problem%20010.py)     |
+| [Problem 10](https://projecteuler.net/problem=10)  | Summation of Primes       | [Python](Solutions/Python/Problem%20010.py), [Rust](Solutions/Rust/problem_010.rs)     |
 | [Problem 12](https://projecteuler.net/problem=12)| Highly divisible triangular number | [Python](Solutions/Python/Problem%20012.py)     |
 | [Problem 14](https://projecteuler.net/problem=14)| Longest Collatz sequence          | [Python](Solutions/Python/Problem%20014.py)     |
 | [Problem 16](https://projecteuler.net/problem=16)| Power Digit Sum          | [Python](Solutions/Python/Problem%20016.py)     |
