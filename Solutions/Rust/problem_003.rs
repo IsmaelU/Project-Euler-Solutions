@@ -7,14 +7,14 @@ fn question() {
 }
 
 fn solve(mut num:u64) -> u64{
-    let mut divisor = 2;
+    let mut divisor = 1;
     while divisor <= num / divisor{
+        divisor += 1;
         while num % divisor == 0{
             num /= divisor;
-        }
-        divisor += 1;
+        }      
     }
-    if num > 1 {num} else {divisor - 1}
+    if num > 1 {num} else {divisor}
 }
 
 fn main() {

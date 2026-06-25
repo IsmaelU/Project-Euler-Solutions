@@ -23,12 +23,12 @@ fn is_prime(n: u32) -> bool {
     true
 }
 
-fn solve(bound:u32) -> u32{
-    if bound == 1 { return 2; }
-    if bound == 2 { return 3; }
+fn solve(target_nth:u32) -> u32{
+    if target_nth == 1 { return 2; }
+    if target_nth == 2 { return 3; }
     let mut counter = 2;
     let mut i = 3;
-    while counter < bound{
+    while counter < target_nth{
         i += 2;
         if is_prime(i){
             counter += 1;

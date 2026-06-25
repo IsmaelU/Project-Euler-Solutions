@@ -23,11 +23,11 @@ fn generate(m: u32, n: u32) -> (u32, u32, u32) {
     return (a, b, c);
 }
 
-fn solve(num: u32) -> u32 {
+fn solve(target_sum: u32) -> u32 {
     let mut m = 2;
     let mut n = 1;
     let (mut a, mut b, mut c) = generate(m, n);
-    while a + b + c != num {
+    while a + b + c != target_sum {
         if m == n {
             m += 1;
             n = 1;

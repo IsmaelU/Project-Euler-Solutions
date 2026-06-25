@@ -20,11 +20,11 @@ fn lcm(a: u64, b: u64) -> u64 {
 }
 
 fn solve(num:u64) -> u64{
-    let mut current_lowest_multiple = 1;
+    let mut current_lcm = 1;
     for i in 1..=num{
-        current_lowest_multiple =  lcm(i,current_lowest_multiple);
+        current_lcm =  lcm(i,current_lcm);
     }
-    current_lowest_multiple
+    current_lcm
 }
 
 fn main() {
