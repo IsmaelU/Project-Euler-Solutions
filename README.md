@@ -30,8 +30,8 @@ Here are some of the Project Euler problems I've solved so far:
 | [Problem 10](https://projecteuler.net/problem=10)  | Summation of Primes       | [Python](Solutions/Python/Problem%20010.py), [Rust](Solutions/Rust/problem_010.rs)     |
 | [Problem 12](https://projecteuler.net/problem=12)| Highly divisible triangular number | [Python](Solutions/Python/Problem%20012.py)     |
 | [Problem 14](https://projecteuler.net/problem=14)| Longest Collatz sequence          | [Python](Solutions/Python/Problem%20014.py), [Rust](Solutions/Rust/problem_014.rs)     |
-| [Problem 16](https://projecteuler.net/problem=16)| Power Digit Sum          | [Python](Solutions/Python/Problem%20016.py)     |
-| [Problem 20](https://projecteuler.net/problem=20)| Factorial Digit Sum          | [Python](Solutions/Python/Problem%20020.py)     |
+| [Problem 16](https://projecteuler.net/problem=16)| Power Digit Sum          | [Python](Solutions/Python/Problem%20016.py), [Rust](Solutions/Rust/problem_016.rs)     |
+| [Problem 20](https://projecteuler.net/problem=20)| Factorial Digit Sum          | [Python](Solutions/Python/Problem%20020.py), , [Rust](Solutions/Rust/problem_020.rs)     |
 | ...      | ...                                       | ...                            |
 
 ## Efficiency and Optimization
