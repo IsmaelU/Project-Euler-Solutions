@@ -7,12 +7,11 @@ fn question() {
 }
 
 fn solve_factorial_digit_sum(target: usize) -> u32 {
-    // Allocation Strategy: Pre-allocate to prevent heap thrashing.
-    // 100! contains 158 digits
+
     let mut digits: Vec<u8> = Vec::with_capacity(160);
     digits.push(1); // Base case: 1! = 1
 
-    // Main iterative multiplication pipeline
+
     for factor in 2..=target {
         let mut carry = 0;
         for digit in digits.iter_mut() {

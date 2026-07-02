@@ -20,11 +20,7 @@ fn lcm(a: u64, b: u64) -> u64 {
 }
 
 fn solve(num:u64) -> u64{
-    let mut current_lcm = 1;
-    for i in 1..=num{
-        current_lcm =  lcm(i,current_lcm);
-    }
-    current_lcm
+    (1..=num).fold(1, lcm)
 }
 
 fn main() {
