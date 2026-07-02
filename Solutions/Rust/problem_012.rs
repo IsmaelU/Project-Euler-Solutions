@@ -6,23 +6,6 @@ fn question() {
     println!("What is the value of the first triangle number to have over five hundred divisors?");
 }
 
-// fn count_divisors(num: u64) -> u64 {
-//     if num == 1{
-//         return 1
-//     }
-//     let limit = num.isqrt();
-//     let mut count = 2;
-//     for i in 2..=limit{
-//         if num % i == 0{
-//             count += 2;
-//         }
-//     }
-//     if limit * limit == num{
-//         count -= 1;
-//     }
-//     count
-// }
-
 fn count_divisors(mut num: u64) -> u64{
 
     let mut divisor = 2;
