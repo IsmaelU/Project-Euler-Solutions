@@ -15,23 +15,37 @@ fn next_collatz(n: u64) -> u64 {
     }
 }
 
-fn get_chain_length(mut start: u64) -> u32 {
-    let mut counter = 1;
-    loop{
-        if start == 1{
-            return counter
+fn get_chain_length(start: u64, cache: &mut [Option<u32>]) -> u32 {
+    if start == 1 {return 1;}
+
+    if start < cache.len() as u64{
+        match cache[start as usize]{
+            Some(val) => {
+                return val
+            },
+            None => {
+                let next_num = next_collatz(start);
+                let counter = get_chain_length(next_num, cache) + 1;
+
+                cache[start as usize] = Some(counter);
+                return counter
+            }
         }
-        start = next_collatz(start);
-        counter += 1;
+    }else{
+        let next_num = next_collatz(start);
+        let counter = get_chain_length(next_num, cache) + 1;
+
+        return counter
     }
 }
 
 fn solve(limit: usize) -> u32 {
     let mut max_length = 0;
     let mut best_start = 0;
+    let mut cache = vec![None; limit];
 
     for i in (limit / 2)..limit{
-        let current_length = get_chain_length(i as u64);
+        let current_length = get_chain_length(i as u64, &mut cache);
         if current_length > max_length{
             best_start = i;
             max_length = current_length;
