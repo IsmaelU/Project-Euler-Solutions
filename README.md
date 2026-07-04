@@ -33,6 +33,7 @@ Here are some of the Project Euler problems I've solved so far:
 | [Problem 16](https://projecteuler.net/problem=16)| Power Digit Sum          | [Python](Solutions/Python/Problem%20016.py), [Rust](Solutions/Rust/problem_016.rs)     |
 | [Problem 20](https://projecteuler.net/problem=20)| Factorial Digit Sum          | [Python](Solutions/Python/Problem%20020.py), [Rust](Solutions/Rust/problem_020.rs)     |
 | [Problem 36](https://projecteuler.net/problem=36)| Double-base Palindromes          |  [Rust](Solutions/Rust/problem_036.rs)     |
+| [Problem 74](https://projecteuler.net/problem=74)| Digit Factorial Chains          |  [Rust](Solutions/Rust/problem_074.rs)     |
 | [Problem 92](https://projecteuler.net/problem=92)| Square Digit Chains          |  [Rust](Solutions/Rust/problem_092.rs)     |
 | ...      | ...                                       | ...                            |
 
