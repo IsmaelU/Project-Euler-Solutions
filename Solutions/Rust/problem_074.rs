@@ -1,6 +1,6 @@
 // Problem 74 - Digit factorial chains
 // https://projecteuler.net/problem=74
-// Answer =
+// Answer = 402
 
 const FACTORIALS: [u64; 10] = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880];
 
@@ -22,7 +22,6 @@ fn next_factorial_sum(mut num: u64) -> u64 {
 }
 
 fn get_chain_length(start: u64, history: &mut Vec<u64>, cache: &mut [u32]) -> u32 {
-    // 🛠️ Todo: Calculate chain length using the memoisation cache
     if history.contains(&start) {
         if let Some(index) = history.iter().position(|&x| x == start) {
             let loop_length = history.len() as u32 - index as u32;
