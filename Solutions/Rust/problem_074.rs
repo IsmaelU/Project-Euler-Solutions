@@ -22,8 +22,7 @@ fn next_factorial_sum(mut num: u64) -> u64 {
 }
 
 fn get_chain_length(start: u64, history: &mut Vec<u64>, cache: &mut [u32]) -> u32 {
-    if history.contains(&start) {
-        if let Some(index) = history.iter().position(|&x| x == start) {
+    if let Some(index) = history.iter().position(|&x| x == start) {
             let loop_length = history.len() as u32 - index as u32;
             for &i in &history[index..] {
                 if i < cache.len() as u64 {
@@ -31,7 +30,6 @@ fn get_chain_length(start: u64, history: &mut Vec<u64>, cache: &mut [u32]) -> u3
                 }
             }
             return loop_length;
-        }
     }
 
     if start >= cache.len() as u64 {

@@ -16,18 +16,17 @@ fn is_base10_palindrome(num: u32) -> bool {
     reverse_num == num
 }
 
-fn is_base2_palindrome(num: u32) -> bool {
-    let mut reverse_num = 0;
-    let mut temp_num = num;
-    while temp_num != 0{
-        reverse_num = (reverse_num << 1) + (temp_num & 1);
-        temp_num >>= 1;
+fn is_base2_palindrome(num: u32) -> bool{
+    if num == 0{
+        return true
     }
-    reverse_num == num  
+    let reverse_num = num.reverse_bits() >> num.leading_zeros();
+    reverse_num == num
 }
 
 fn solve(limit: u32) -> u32 {
-    (1..limit).into_iter().filter(|&x| is_base10_palindrome(x) && is_base2_palindrome(x)).sum()
+    //Step by 2 as even numbers can never be a palindrome in base 2
+    (1..limit).step_by(2).filter(|&x| is_base2_palindrome(x) && is_base10_palindrome(x)).sum()
 }
 
 fn main() {
